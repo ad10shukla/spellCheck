@@ -202,7 +202,7 @@ class MainWindow(QMainWindow, pre_final4.Ui_MainWindow):
         self.tmp = word_inp
         
         self.dict = self.search(word_inp, 2)
-        self.dict = sorted(self.dict.items(), key = operator.itemgetter(1), reverse=True)[:10]
+        self.dict = sorted(self.dict.items(), key = operator.itemgetter(1), reverse=True)[:3]
         return self.dict 
     
 lst = freqlist.freqlst()        # Creates an instance of freqlist class which holds the frequency of the words  
